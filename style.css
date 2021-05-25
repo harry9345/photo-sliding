@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100vh;
+  background-color: #eee;
+  height: 400px;
+
+  position: relative;
+  margin: auto;
+}
+.mySlide {
+  display: none;
+}
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  color: beige;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  user-select: none;
+  width: auto;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.next {
+  right: 0;
+}
+.next:hover,
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numberText {
+  position: absolute;
+  top: 0;
+  padding: 8px 12px;
+  color: aliceblue;
+  font-size: 12px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  display: inline-block;
+  background-color: rgb(161, 42, 42);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
